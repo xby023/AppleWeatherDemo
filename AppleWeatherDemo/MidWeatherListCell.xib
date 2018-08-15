@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MidWeatherListCell">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="晴2" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-hd-VFD">
+                        <rect key="frame" x="35" y="47" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="mbF-1I-OTG"/>
+                            <constraint firstAttribute="height" constant="26" id="pz7-kv-k6i"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下午12时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byp-XQ-SLi">
+                        <rect key="frame" x="0.0" y="12" width="96" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="w81-hg-ek2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-hO-1bO">
+                        <rect key="frame" x="0.0" y="89" width="96" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="FjP-gV-0g8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="byp-XQ-SLi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="8Fn-h1-NiY"/>
+                <constraint firstItem="Zbg-hd-VFD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="AoO-jX-c1E"/>
+                <constraint firstAttribute="trailing" secondItem="byp-XQ-SLi" secondAttribute="trailing" id="JGY-Hv-Po4"/>
+                <constraint firstItem="byp-XQ-SLi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N65-nA-zVH"/>
+                <constraint firstAttribute="bottom" secondItem="F9d-hO-1bO" secondAttribute="bottom" constant="15" id="UQB-Kr-4MQ"/>
+                <constraint firstAttribute="trailing" secondItem="F9d-hO-1bO" secondAttribute="trailing" id="czx-0D-EWd"/>
+                <constraint firstItem="Zbg-hd-VFD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="rit-Ds-M5i"/>
+                <constraint firstItem="F9d-hO-1bO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yOj-cI-Hpa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="96" height="120"/>
+            <connections>
+                <outlet property="iconView" destination="Zbg-hd-VFD" id="ukI-Yh-ROc"/>
+                <outlet property="tempLabel" destination="F9d-hO-1bO" id="Xk8-JP-3f1"/>
+                <outlet property="timeLabel" destination="byp-XQ-SLi" id="JB9-eL-rNH"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="89"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="晴2" width="100" height="100"/>
+    </resources>
+</document>
