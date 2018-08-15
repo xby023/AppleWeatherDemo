@@ -1,2 +1,2 @@
 # AppleWeatherDemo
-仿苹果天气主页效果
+![image](https://github.com/xby023/AppleWeatherDemo/blob/master/DemoGif.gif)
