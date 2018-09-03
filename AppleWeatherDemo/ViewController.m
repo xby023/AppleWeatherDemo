@@ -58,11 +58,11 @@
     
     //分割线
     UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 0.5)];
-    line1.backgroundColor = [UIColor whiteColor];
+    line1.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
     [midView addSubview:line1];
     
     UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(0, 119.5, ScreenWidth, 0.5)];
-    line2.backgroundColor = [UIColor whiteColor];
+    line2.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
     [midView addSubview:line2];
     
     self.midView.backImageVIew.image = [self imageWithView:self.backImageView frame:CGRectMake(0, 125 + NAVIBAR_Space, ScreenWidth, 122.5)];
